@@ -18,6 +18,7 @@ will need to install the [Greasemonkey][] extension before proceeding.
 
 [Click here to install the script.][install]
 
+[install]: http://github.com/hallettj/party_mix_for_rdio/blob/master/party_mix_for_rdio.user.js  "Install Party Mix for Rdio"
 
 Usage
 ------
