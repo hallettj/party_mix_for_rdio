@@ -121,7 +121,10 @@ var sitrus = function($) {
     }
 
     function addToQueue(song) {
-        getPlayer()._queueSource('t', song.id || song);
+        getPlayer()._queueSource({
+            type: song.type || 't',
+            id: song.id || song
+        });
     }
 
     function getArtistsInCollection(callback) {
