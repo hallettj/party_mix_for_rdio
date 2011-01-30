@@ -23,7 +23,7 @@ var sitrus = function($) {
                 'right': '8px'
             });
 
-            var partyMixButton = $('<button class="button default_button" id="party_mix">Queue Random Songs</button>');
+            var partyMixButton = $('<button class="button default_button">Queue Random Songs</button>');
             partyMixDiv.append(partyMixButton);
 
             partyMixButton.click(function() {
