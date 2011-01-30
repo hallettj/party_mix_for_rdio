@@ -17,13 +17,20 @@ var sitrus = function($) {
 
     function displayPartyMixButton() {
         if ($('#party_mix').length < 1 && $('#collection_container').length > 0) {
-            var partyMixButton = $('<button id="party_mix">Add 25 random songs to Queue</button>');
+            var partyMixDiv = $('<div id="party_mix" class="rdio-station"></div>').css({
+                'position': 'relative',
+                'bottom': '3px',
+                'right': '8px'
+            });
+
+            var partyMixButton = $('<button class="button default_button" id="party_mix">Queue Random Songs</button>');
+            partyMixDiv.append(partyMixButton);
 
             partyMixButton.click(function() {
                 queueRandom(25);
             });
 
-            $('#collection_container').prepend(partyMixButton);
+            $('#collection_header').append(partyMixDiv);
         }
     }
 
